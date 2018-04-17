@@ -1,6 +1,6 @@
 \name{eqt.pos}
 \alias{eqt.pos}
-\title{Output the positions of equations in a plot region}
+\title{Calculate the positions of equations in a plot region}
 \usage{
 eqt.pos(no = 50,col.n = 3)
 }
