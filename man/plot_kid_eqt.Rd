@@ -2,7 +2,7 @@
 \alias{plot_kid_eqt}
 \title{Output addition/minus or multiplication/division equations excise for primary students}
 \usage{
-plot_kid_eqt(equation, equation.layout = 1,no=50, col.n=3, page.no=NULL,main='小学生数学练习题',
+plot_kid_eqt(equation, equation.layout = 1,no=50, col.n=3, page.no=NULL,main="A 50-math-formulas excise for kids",
 	cex=1,width=NULL)}
 \description{
 The function could be used as producing excise on addition and minus equations for primary students. 
