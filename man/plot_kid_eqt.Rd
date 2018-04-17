@@ -20,6 +20,29 @@ The function could be used as producing excise on addition and minus equations f
 \author{ Guofang Liu \email{liugf@ibcas.ac.cn}}
 
 \examples{
+
+\name{plot_kid_eqt}
+\alias{plot_kid_eqt}
+\title{Output addition/minus or multiplication/division equations excise for primary students}
+\usage{
+plot_kid_eqt(equation, equation.layout = 1,no=50, col.n=3, page.no=NULL,main='小学生数学练习题',
+	cex=1,width=NULL)}
+\description{
+The function could be used as producing excise on addition and minus equations for primary students. 
+}
+\arguments{
+	\item{equation}{a array denoting addition/minus formulae.}
+	\item{equation.layout}{the one or two blocks on 50 eauations.}
+	\item{no}{the default is 50 equation.}
+	\item{col.n}{Default is three columns.}
+	\item{page.no}{add a page number at the bottom of pages.}
+	\item{main}{a title of the taskment. }
+	\item{cex}{change the font size of equations. }
+	\item{width}{the width of several columns based on different lengths of equations. }
+}
+\author{ Guofang Liu \email{liugf@ibcas.ac.cn}}
+
+\examples{
 # 
 # # 加减运算 between 10 and 100
 # library(dplyr)
@@ -64,7 +87,5 @@ The function could be used as producing excise on addition and minus equations f
 #   plot_kid_eqt(string[1:50],col.n=3,main='小学二年级（下）数学练习题',cex=1.8,width=c(0.9,1,1.2))
 #   
 #   dev.off()
-# }	
-
-
+# }
 }
