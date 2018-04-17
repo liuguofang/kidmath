@@ -22,10 +22,10 @@ plot_kid_eqt <- function(equation, no=50, col.n=3, page.no=NULL,main='小学生�
 	})
 	
 	blank.line <-paste(rep("_",11),collapse='')
-	txt <- paste0(c("班级:","姓名:","时间:","日期:"),blank.line)
+	txt <- paste0(c("Class:","Name:","Time:","Date:"),blank.line)
 	mtext(txt,side=3, line= 1, adj=c(0.01,0.30,0.60,0.95),out=TRUE)
 	
 	mtext(side=3,text=main,line=4,out=TRUE,cex=1.5)
-	if(!is.null(page.no)) 	mtext(sprintf("第%s页",page.no),side=1, line=0,adj=0.5,out=TRUE)
+	if(!is.null(page.no)) 	mtext(sprintf("%s",page.no),side=1, line=0,adj=0.5,out=TRUE)
 	
 }
