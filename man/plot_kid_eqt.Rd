@@ -1,5 +1,4 @@
-\name{plot_kid_eqt}
-\alias{plot_kid_eqt}
+﻿\name{plot_kid_eqt}
 \title{Output addition/minus or multiplication/division equations excise for primary students}
 \usage{
 plot_kid_eqt(equation, equation.layout = 1,no=50, col.n=3, page.no=NULL,main="A 50-math-formulas excise for kids",
@@ -31,7 +30,7 @@ equation1 <- sample(c(add.eqt,minus.eqt))
 # multiplication and division operation for kids
 x <- expand.grid(2:9,2:9)
 x <- unique(cbind(x,sum=x[,1]*x[,2]))
-equation2 <- sample(c(sprintf("%s×%s= ",x[,1],x[,2]),sprintf("%s÷%s= ",x[,3],x[,2])))
+equation2 <- sample(c(sprintf("%s x %s= ",x[,1],x[,2]),sprintf("%s÷%s= ",x[,3],x[,2])))
 
 # math over and less operations for kids
 x <- expand.grid(2:9,2:9)
@@ -40,7 +39,7 @@ library(plyr)
 x <- expand.grid(diff=seq(-5,5),sum=x$sum) %>% join(x)
 x <-subset(mutate(x,sum2=diff+sum),sum2>3&sum2%/%x[,3]<10) 
 	 	 	
-equation3 <- c(sprintf("%s×%s (  ) %s",x[,3],x[,4],x[,5]),
+equation3 <- c(sprintf("%sx%s (  ) %s",x[,3],x[,4],x[,5]),
 				sprintf("%s÷%s (  ) %s",x[,5],x[,3],x[,4]))
 
 d <- expand.grid(10:89,2:9)
