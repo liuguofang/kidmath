@@ -1,4 +1,5 @@
 ﻿\name{plot_kid_eqt}
+\alias{plot_kid_eqt}
 \title{Output addition/minus or multiplication/division equations excise for primary students}
 \usage{
 plot_kid_eqt(equation, equation.layout = 1,no=50, col.n=3, page.no=NULL,main="A 50-math-formulas excise for kids",
@@ -49,20 +50,20 @@ The function could be used as producing excise on addition and minus equations f
 ## equation4 <- sprintf("%s÷%s = (  )......(  )",d2$Var1,d2$Var2)
 
 
-string <- c(sample(equation1,13),sample(equation2,13),
-			sample(equation3,12),sample(equation4,12))
-plot_kid_eqt(string[1:50],col.n=3,cex=1.8,width=c(0.9,1,1.2))
+## string <- c(sample(equation1,13),sample(equation2,13),
+##			sample(equation3,12),sample(equation4,12))
+## plot_kid_eqt(string[1:50],col.n=3,cex=1.8,width=c(0.9,1,1.2))
 
 ##  ## produce pdf files
 ## for(i in 1:20){	
-## cairo_pdf(sprintf("加减乘除(含余)大于小于50道(20页)(%s)(%s).pdf",i,Sys.Date()),
+## cairo_pdf(sprintf("50 equations per page (%s)(%s).pdf",i,Sys.Date()),
 ## 			width=8.267717,height=11.69291,family='GB1')
 		
 
 ## 	string <- c(sample(equation1,13),sample(equation2,13),
 ## 			sample(equation3,12),sample(equation4,12))
 		
-## 	plot_kid_eqt(string[1:50],col.n=3,main='小学二年级（下）数学练习题',cex=1.8,width=c(0.9,1,1.2))
+## 	plot_kid_eqt(string[1:50],col.n=3,cex=1.8,width=c(0.9,1,1.2))
 
 ## 	dev.off()
 ## }	
