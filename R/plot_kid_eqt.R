@@ -1,5 +1,5 @@
-
-plot_kid_eqt <- function(equation, no=50, col.n=3, page.no=NULL,main='小学生数学练习题',
+﻿
+plot_kid_eqt <- function(equation, no=50, col.n=3, page.no=NULL,main="A 50-math-formulas excise for kids",
 		cex=1,width=NULL) {
 	
 	pt.pos <- eqt.pos(no=no,col.n=col.n)
