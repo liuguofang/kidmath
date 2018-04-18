@@ -1,4 +1,5 @@
-﻿
+﻿#' Output the 50 math formulas excise for kids
+#' 
 plot_kid_eqt = function(equation, no=50, col.n=3, page.no=NULL,main="50-math-formulas excise for kids",
 		cex=1,width=NULL) {
 	
