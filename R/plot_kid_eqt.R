@@ -1,7 +1,4 @@
-﻿#' Output the 50 math formulas excise for kids
-#' 
-plot_kid_eqt = function(equation, no=50, col.n=3, page.no=NULL,main="50-math-formulas excise for kids",
-		cex=1,width=NULL) {
+plot_kid_eqt = function(equation, no=50, col.n=3, page.no=NULL,main="50-math-formulas excise for kids",cex=1,width=NULL) {
 	
 	pt.pos <- eqt.pos(no=no,col.n=col.n)
 	pt.pos <- cbind(rowid=as.numeric(row.names(pt.pos)),pt.pos)
