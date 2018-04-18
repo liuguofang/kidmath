@@ -1,5 +1,5 @@
 ﻿
-plot_kid_eqt <- function(equation, no=50, col.n=3, page.no=NULL,main=="A 50-math-formulas excise for kids",
+plot_kid_eqt <- function(equation, no=50, col.n=3, page.no=NULL,main="A 50-math-formulas excise for kids",
 		cex=1,width=NULL) {
 	
 	pt.pos <- eqt.pos(no=no,col.n=col.n)
@@ -21,7 +21,7 @@ plot_kid_eqt <- function(equation, no=50, col.n=3, page.no=NULL,main=="A 50-math
 				abline(h=grconvertY(c(1.0,1.005), from = "npc"),xpd=TRUE,col='gray')
 	})
 	
-	blank.line <-paste(rep("_",11),collapse='')
+	blank.line <- paste(rep("_",11),collapse='')
 	txt <- paste0(c("Class:","Name:","Time:","Date:"),blank.line)
 	mtext(txt,side=3, line= 1, adj=c(0.01,0.30,0.60,0.95),out=TRUE)
 	
