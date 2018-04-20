@@ -20,7 +20,7 @@ plot_kid_eqt = function(equation, no=50, col.n=3, page.no=NULL,main="50-math-for
 	})
 	
 	blank.line <- paste(rep("_",11),collapse='')
-	txt <- paste0(substitle,":",blank.line)
+	txt <- paste0(subtitle,":",blank.line)
 	mtext(txt,side=3, line= 1, adj=c(0.01,0.30,0.60,0.95),out=TRUE)
 	
 	mtext(side=3,text=main,line=4,out=TRUE,cex=1.5)
