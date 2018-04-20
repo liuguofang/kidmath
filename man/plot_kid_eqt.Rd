@@ -3,7 +3,7 @@
 \title{Output addition/minus or multiplication/division equations excise for primary students}
 \usage{
 plot_kid_eqt(equation, equation.layout = 1,no=50, col.n=3, page.no=NULL,main="A 50-math-formulas excise for kids",
-	cex=1,width=NULL)}
+	subtitle= c("Class","Name","Time","Date"),cex=1,width=NULL)}
 \description{
 The function could be used as producing excise on addition and minus equations for primary students. 
 }
@@ -14,6 +14,7 @@ The function could be used as producing excise on addition and minus equations f
 	\item{col.n}{Default is three columns.}
 	\item{page.no}{add a page number at the bottom of pages.}
 	\item{main}{a title of the taskment. }
+	\item{subtitle} {rename subtitle according to this argument.}
 	\item{cex}{change the font size of equations. }
 	\item{width}{the width of several columns based on different lengths of equations. }
 }

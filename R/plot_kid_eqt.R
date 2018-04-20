@@ -1,4 +1,4 @@
-plot_kid_eqt = function(equation, no=50, col.n=3, page.no=NULL,main="50-math-formulas excise for kids",cex=1,width=NULL) {
+plot_kid_eqt = function(equation, no=50, col.n=3, page.no=NULL,main="50-math-formulas excise for kids",subtitle= c("Class","Name","Time","Date"),cex=1,width=NULL) {
 	
 	pt.pos <- eqt.pos(no=no,col.n=col.n)
 	pt.pos <- cbind(rowid=as.numeric(row.names(pt.pos)),pt.pos)
@@ -20,7 +20,7 @@ plot_kid_eqt = function(equation, no=50, col.n=3, page.no=NULL,main="50-math-for
 	})
 	
 	blank.line <- paste(rep("_",11),collapse='')
-	txt <- paste0(c("Class:","Name:","Time:","Date:"),blank.line)
+	txt <- paste0(substitle,":",blank.line)
 	mtext(txt,side=3, line= 1, adj=c(0.01,0.30,0.60,0.95),out=TRUE)
 	
 	mtext(side=3,text=main,line=4,out=TRUE,cex=1.5)

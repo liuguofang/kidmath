@@ -7,7 +7,7 @@
 ##' @param no the number of equations will be shown onto the plot region.
 ##' @param col.n the columns of equations will be shown, which the order is
 ##' from top to down and from left to right.
-##' @author Guofang Liu \email{liugf@@ibcas.ac.cn}
+##' @author Guofang Liu \email{liugf@ibcas.ac.cn}
 ##' @examples
 ##' 
 ##' 
