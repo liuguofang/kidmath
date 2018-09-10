@@ -12,3 +12,11 @@ This is a R package used to
   devtools::install_github("liuguofang/kidmath")
   library(kidmath)
 ```
+
+```{R,warning=FALSE,message = FALSE}
+  #install.packages("kidmath")
+  devtools::install_github("liuguofang/kidmath")
+  library(kidmath)
+  score24(x = c(1,2,9,11)
+```
+
