@@ -15,5 +15,5 @@ The function could be used as calcuating solutions on score-24 game for Chinese 
 
 \examples{
 
-score24(x = c(1,2,9,11)
+score24(x = c(1,2,9,11))
 }
